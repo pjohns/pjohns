@@ -144,21 +144,6 @@ $(document).ready(function() {
           }
       }
   });
-  $('.gallery-link').on('click', function () {
-    $(this).previous().magnificPopup('open');
-  });
-
-  $('.portfolio-preview').each(function () {
-      $(this).magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: {
-              enabled: true,
-              navigateByImgClick: true
-          },
-          fixedContentPos: false
-      });
-  });
 
    $('.magnific-gallery').each(function(index , value){
     var gallery = $(this);
