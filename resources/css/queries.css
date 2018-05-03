@@ -28,6 +28,10 @@
         margin-right: 5px;
     }
 
+    .title .icon-small {
+        margin-left: 5px;
+    }
+    
     .skills-box {
         width: 100%;
         margin-left: 0%;
