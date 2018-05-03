@@ -84,9 +84,6 @@ $(document).ready(function() {
         }
     });
 
-    $('.research-talk').magnificPopup({
-        type: 'iframe'
-    });
 
     $('.spur-poster').magnificPopup({
         type: 'image'
@@ -130,6 +127,38 @@ $(document).ready(function() {
            }
        }
    });
+   $('.popup-gallery-thesis').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      },
+      image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+          titleSrc: function(item) {
+              return item.el.attr('title') + '<small>&copy; Pat Johnson</small>';
+          }
+      }
+  });
+  $('.gallery-link').on('click', function () {
+    $(this).previous().magnificPopup('open');
+  });
+
+  $('.portfolio-preview').each(function () {
+      $(this).magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: {
+              enabled: true,
+              navigateByImgClick: true
+          },
+          fixedContentPos: false
+      });
+  });
 
    $('.magnific-gallery').each(function(index , value){
     var gallery = $(this);
