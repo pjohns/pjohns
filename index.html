@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="vendors/css/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+
     <title>Pat Johnson</title>
 
     <link rel="apple-touch-icon" sizes="72x72" href="resources/favicons/apple-touch-icon.png">
@@ -23,29 +24,31 @@
     <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
     <meta name="theme-color" content="#000000">
 
-
-
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
         <div class="row">
           <img src="./resources/img/logo-white.png" alt="logo" class="logo">
-          <img src="./resources/img/logo.png" alt="logo" class="logo-black">
+          <a href="#header">
+                <img src="./resources/img/logo.png" alt="logo" class="logo-black" />
+          </a>
           <ul class="main-nav js--main-nav">
               <li><a href="#profile">Profile</a></li>
               <li><a href="#experience">Experience & Skills</a></li>
-              <li><a href="#publications">Publications</a></li>
               <li><a href="#projects">Projects</a></li>
+              <li><a href="#publications">Publications</a></li>
           </ul>
           <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
         </div>
       </nav>
       <div class="hero-text-box">
           <h1>Pat Johnson</h1>
-          <h3>Interactive resume and portfolio</h3>
+          <h3>Resume and Portfolio</h3>
+          <!---<a class="btn btn-full js--scroll-to-plans" href="#">Install</a>--->
       </div>
-      <a class="scroll-down" href="#profile"><span><i class="ion-chevron-down icon-big pulse"></i></span></a>
+
+
     </header>
     <section class="section-profile js--section-profile" id="profile">
       <div class="row">
@@ -66,7 +69,7 @@
           <p>
             <strong>Name:</strong>
             <br />
-            Pat Johsnon
+            Pat Johnson
             <br />
             <strong>Age:</strong>
             <br />
@@ -75,6 +78,10 @@
             <strong>Current Location:</strong>
             <br />
             Colorado Springs, CO, United States
+            <br />
+            <strong>Email:</strong>
+            <br />
+            <a href="mailto:patjohns1216@gmail.com" target="_top">patjohns1216@gmail.com</a>
           </p>
           <a class="github-button" href="https://github.com/overdodactyl" aria-label="Follow">Follow</a>
         </div>
@@ -196,8 +203,6 @@
                       <div>
                           <ul>
                               <li><i class="ion-ios-checkmark-empty icon-small"></i>Python</li>
-                              <li><i class="ion-ios-checkmark-empty icon-small"></i>CSS</li>
-                              <li><i class="ion-ios-checkmark-empty icon-small"></i>SageMath</li>
                               <li><i class="ion-ios-checkmark-empty icon-small"></i>Adobe Creative Suite</li>
                               <li><i class="ion-ios-checkmark-empty icon-small"></i>ImageJ</li>
                           </ul>
@@ -211,13 +216,14 @@
                       </div>
                       <div>
                           <ul>
-                              <li><i class="ion-ios-checkmark-empty icon-small"></i>R</li>
-                              <li><i class="ion-ios-checkmark-empty icon-small"></i>LaTex</li>
-                              <li><i class="ion-ios-checkmark-empty icon-small"></i>Git and GitHub</li>
                               <li><i class="ion-ios-checkmark-empty icon-small"></i>Java</li>
-                              <li><i class="ion-ios-checkmark-empty icon-small"></i>Bash</li>
+                              <li><i class="ion-ios-checkmark-empty icon-small"></i>R</li>
                               <li><i class="ion-ios-checkmark-empty icon-small"></i>HTML</li>
+                              <li><i class="ion-ios-checkmark-empty icon-small"></i>CSS</li>
+                              <li><i class="ion-ios-checkmark-empty icon-small"></i>Bash</li>
+                              <li><i class="ion-ios-checkmark-empty icon-small"></i>LaTex</li>
                               <li><i class="ion-ios-checkmark-empty icon-small"></i>Matlab</li>
+                              <li><i class="ion-ios-checkmark-empty icon-small"></i>Git and GitHub</li>
                           </ul>
                       </div>
                   </div>
@@ -229,16 +235,163 @@
                       </div>
                       <div>
                           <ul>
+                              <li><i class="ion-ios-checkmark-empty icon-small"></i>JavaScript</li>
                               <li><i class="ion-ios-checkmark-empty icon-small"></i>SQL</li>
                               <li><i class="ion-ios-checkmark-empty icon-small"></i>C/C++</li>
-                              <li><i class="ion-ios-checkmark-empty icon-small"></i>JavaScript</li>
                           </ul>
                       </div>
                   </div>
               </div>
           </div>
     </section>
-    <section class="section-presentations" id="publications">
+    <section class="section-projects" id="projects">
+      <div class="row">
+        <h2>Projects</h2>
+      </div>
+      <div class="row">
+      <!-- Tab links -->
+        <div class="tab">
+          <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'shadowfox')" id="defaultOpen_2"><h3>ShadowFox</h3></button>
+         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'osc')"><h3>Open Source Contributions</h3></button>
+         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'pipeline')"><h3>ChiPSeq Pipeline</h3></button>
+         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'oimb')"><h3>OIMB</h3></button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="shadowfox" class="tabcontent-project">
+          <div class="row">
+            <div class="col span-1-of-3">
+              <a href="https://overdodactyl.github.io/ShadowFox/" target="_blank">
+                <img src="./resources/img/shadowfox.jpg" class="thumbnail" />
+              </a>
+            </div>
+            <div class="col span-2-of-3 description-container">
+              <a class="title" href="https://overdodactyl.github.io/ShadowFox/" target="_blank">A Universal Dark Theme for Firefox<i class="ion-link icon-small"></i></a>
+              <a class="github-button" href="https://github.com/overdodactyl/shadowfox" data-icon="octicon-star" data-size="small" data-show-count="true" aria-label="Star overdodactyl/shadowfox on GitHub">Star</a>
+              <p class="description">
+                ShadowFox is a project I started after Firefox 57 limited the ability of add-ons to modify the user interface and protected webpages.  It leverages <code>userChrome.css</code> and <code>userContent.css</code> to create a global dark theme.
+                As the project has grown in size and users, I have gained experience with CSS, git, GitHub, issue tracking, troubleshooting, and customer support style help. Check out it's website today!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="osc" class="row tabcontent-project">
+          <div class="row">
+            <div class="col span-1-of-8 os-thumb">
+              <img class="thumbnail" src="./resources/img/ghacks-logo.png" />
+            </div>
+            <div class="col span-7-of-8 description-container">
+              <p>
+                <a class="title" href="https://github.com/ghacksuserjs/ghacks-user.js" target="_blank">gHacks user.js</a><br />
+                Developed Bash scripts to automate the process of installing, updating, and backing up the gHacks <code>user.js</code>, a config file used to harden the security and privacy settings of Firefox. <br />
+                Commentary on the contribution was published by <a href="https://www.ghacks.net/2017/12/29/automation-comes-to-the-ghacks-user-js-configuration-for-firefox/">ghacks.net</a> (my username: <code>overdodactyl</code>).
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-8 os-thumb">
+              <img class="thumbnail" src="./resources/img/res-logo.png" />
+            </div>
+            <div class="col span-7-of-8 description-container">
+              <p>
+                <a class="title" href="https://redditenhancementsuite.com/" target="_blank">Reddit Enhancement Suite</a><br />
+                Small feature additions including keyboard shortcuts and display settings.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col span-1-of-8 os-thumb">
+              <img class="thumbnail" src="./resources/img/codemirror-logo.png" />
+            </div>
+            <div class="col span-7-of-8 description-container">
+              <p>
+                <a class="title" href="http://codemirror.net/" target="_blank">CodeMirror</a><br />
+                Addition of a new CodeMirror theme that mirrors Firefox's developer tool's dark theme.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="pipeline" class="tabcontent-project">
+          <div class="row">
+            <div class="col span-1-of-3">
+              <a data-links="./resources/img/pipeline/pipeline_presentation_Page_01.jpg,./resources/img/pipeline/pipeline_presentation_Page_02.jpg,./resources/img/pipeline/pipeline_presentation_Page_03.jpg,./resources/img/pipeline/pipeline_presentation_Page_04.jpg,./resources/img/pipeline/pipeline_presentation_Page_05.jpg,./resources/img/pipeline/pipeline_presentation_Page_06.jpg,./resources/img/pipeline/pipeline_presentation_Page_07.jpg,./resources/img/pipeline/pipeline_presentation_Page_08.jpg,./resources/img/pipeline/pipeline_presentation_Page_09.jpg,./resources/img/pipeline/pipeline_presentation_Page_10.jpg,./resources/img/pipeline/pipeline_presentation_Page_11.jpg,./resources/img/pipeline/pipeline_presentation_Page_12.jpg,./resources/img/pipeline/pipeline_presentation_Page_13.jpg,./resources/img/pipeline/pipeline_presentation_Page_14.jpg,./resources/img/pipeline/pipeline_presentation_Page_15.jpg,./resources/img/pipeline/pipeline_presentation_Page_16.jpg" class="magnific-gallery thesis-preview clickable">
+              <img src="./resources/img/thesis_cover.jpg" class="thumbnail"/>
+              </a>
+            </div>
+            <div class="col span-2-of-3 description-container">
+              <a class="title" href="./resources/img/pipeline_presentation.pdf" target="_blank">Pipelined Methylation Analysis and Mapping Reads for Display on IGV<i class="ion-android-open icon-small"></i></a>
+              <a class="github-button" href="https://github.com/aowen87/VincePipeline" data-size="large" aria-label="View on GitHub">View</a>
+              <p class="description">
+                As part of a class project for CIS 454 (Bioinformatics), myself and two others teamed up with a postdoctoral researcher to help pipeline the analysis of ChiPSeq data.  We used a combination of Python and Bash scripts to automate the analysis and create a graphic user interface for biologists without knowledge of command line programs.  The project is now hosted on the University of Oregon super computer as well as GitHub.  This provided me with practical experience creating meaningful, easily accessible programs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="oimb" class="tabcontent-project">
+          <div class="row">
+            <p class="long-copy">
+              I spent one quarter at the Oregon Institute of Marine Biology (OIMB).  As an independent class project, I created a portfolio representing a small portion of the vast diversity of invertebrates found along the West Coast. All photographs were taken by myself either in the field or a lab setting.  Editing was done using Adobe Photoshop and Illustrator.
+            </p>
+            <hr />
+          </div>
+          <div class="row oimb">
+            <div class="col span-1-of-3">
+              <figure class="thumbnail">
+                <a data-links="./resources/img/inverts_portfolio-01.jpg,./resources/img/inverts_portfolio-02.jpg,./resources/img/inverts_portfolio-03.jpg,./resources/img/inverts_portfolio-04.jpg,./resources/img/inverts_portfolio-05.jpg,./resources/img/inverts_portfolio-06.jpg" class="magnific-gallery portfolio-preview clickable">
+                <img src="./resources/img/inverts_portfolio-01.jpg" class="thumbnail"/>
+                </a>
+              </figure>
+              <figcaption class="fig-caption">
+                Sample portfolio pages.  6 of 75.
+              </figcaption>
+
+            </div>
+              <div class="col span-2-of-3">
+                <div class="popup-gallery-inverts">
+
+                    <a href="./resources/img/inverts/christmas_anemone.jpg" title="Christmas Anemone"><img src="./resources/img/inverts/christmas_anemone-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/gaper_clam.jpg" title="Gaper Clam"><img src="./resources/img/inverts/gaper_clam-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/glass_sponge.jpg" title="Glass Sponge"><img src="./resources/img/inverts/glass_sponge-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/heart_cockle.jpg" title="Heart Cockle"><img src="./resources/img/inverts/heart_cockle-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/lined_chiton.jpg" title="Lined Chiton"><img src="./resources/img/inverts/lined_chiton-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/nauplius.jpg" title="Nauplius"><img src="./resources/img/inverts/nauplius-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/opalescent_nudibranch.jpg" title="Opalescent Nudibranch"><img src="./resources/img/inverts/opalescent_nudibranch-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/orange_cup_coral.jpg" title="Orange Cup Coral"><img src="./resources/img/inverts/orange_cup_coral-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/red_abalone.jpg" title="Red Abalone"><img src="./resources/img/inverts/red_abalone-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/skeleton_shrimp.jpg" title="Skeleton Shrimp"><img src="./resources/img/inverts/skeleton_shrimp-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/strawberry_anenome.jpg" title="Strawberry Anemone"><img src="./resources/img/inverts/strawberry_anenome-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/volcano_limpet_1.jpg" title="Volcano Limpet"><img src="./resources/img/inverts/volcano_limpet_1-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/volcano_limpet_2.jpg" title="Volcano Limpet"><img src="./resources/img/inverts/volcano_limpet_2-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/volcano_limpet_3.jpg" title="Volcano Limpet"><img src="./resources/img/inverts/volcano_limpet_3-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/brittle_star.jpg" title="Brittle Star"><img src="./resources/img/inverts/brittle_star-sm.jpg"></a>
+
+                    <a href="./resources/img/inverts/hudsons_dorid.jpg" title="Hudsin's Dorid"><img src="./resources/img/inverts/hudsons_dorid-sm.jpg"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="section-presentations  off-color" id="publications">
       <div class="row">
         <h2>Academic Publications and Presentations</h2>
       </div>
@@ -308,153 +461,7 @@
 
     </section>
 
-    <section class="section-projects off-color" id="projects">
-      <div class="row">
-        <h2>Projects</h2>
-      </div>
-      <div class="row">
-      <!-- Tab links -->
-        <div class="tab">
-          <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'shadowfox')" id="defaultOpen_2"><h3>ShadowFox</h3></button>
-         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'osc')"><h3>Open Source Contributions</h3></button>
-         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'pipeline')"><h3>ChiPSeq Pipeline</h3></button>
-         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'oimb')"><h3>OIMB</h3></button>
-        </div>
 
-        <!-- Tab content -->
-        <div id="shadowfox" class="tabcontent-project">
-          <div class="row">
-            <div class="col span-1-of-3">
-              <a href="https://overdodactyl.github.io/ShadowFox/" target="_blank">
-                <img src="./resources/img/shadowfox.jpg" class="thumbnail" />
-              </a>
-            </div>
-            <div class="col span-2-of-3 description-container">
-              <a class="title" href="https://overdodactyl.github.io/ShadowFox/" target="_blank">A Universal Dark Theme for Firefox<i class="ion-link icon-small"></i></a>
-              <a class="github-button" href="https://github.com/overdodactyl/shadowfox" data-icon="octicon-star" data-size="small" data-show-count="true" aria-label="Star overdodactyl/shadowfox on GitHub">Star</a>
-              <p class="description">
-                ShadowFox is a project I started after Firefox 57 limited the ability of add-ons to modify the user interface and protected webpages.  It leverages <code>userChrome.css</code> and <code>userContent.css</code> to create a global dark theme.
-                As the project has grown in size and users, I have gained experience with CSS, git, GitHub, issue tracking, troubleshooting, and customer support style help. Check out it's website today!
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div id="osc" class="row tabcontent-project">
-          <div class="row">
-            <div class="col span-1-of-8 os-thumb">
-              <img class="thumbnail" src="./resources/img/ghacks-logo.png" />
-            </div>
-            <div class="col span-7-of-8 description-container">
-              <p>
-                <a class="title" href="https://github.com/ghacksuserjs/ghacks-user.js" target="_blank">gHacks user.js</a><br />
-                Developed bash scripts to automate the process of installing, updating, and backing up the gHacks <code>user.js</code>, a config file used to harden the security and privacy settings of Firefox. <br />
-                Commentary on the contribution was published by <a href="https://www.ghacks.net/2017/12/29/automation-comes-to-the-ghacks-user-js-configuration-for-firefox/">ghacks.net</a> (my username: <code>overdodactyl</code>).
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-8 os-thumb">
-              <img class="thumbnail" src="./resources/img/res-logo.png" />
-            </div>
-            <div class="col span-7-of-8 description-container">
-              <p>
-                <a class="title" href="https://redditenhancementsuite.com/" target="_blank">Reddit Enhancement Suite</a><br />
-                Small feature additions including keyboard shortcuts and display settings.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-8 os-thumb">
-              <img class="thumbnail" src="./resources/img/codemirror-logo.png" />
-            </div>
-            <div class="col span-7-of-8 description-container">
-              <p>
-                <a class="title" href="http://codemirror.net/" target="_blank">CodeMirror</a><br />
-                Addition of a new CodeMirror theme that mirrors Firefox's developer tool's dark theme.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div id="pipeline" class="tabcontent-project">
-          <div class="row">
-            <div class="col span-1-of-3">
-              <a data-links="./resources/img/pipeline/pipeline_presentation_Page_01.jpg,./resources/img/pipeline/pipeline_presentation_Page_02.jpg,./resources/img/pipeline/pipeline_presentation_Page_03.jpg,./resources/img/pipeline/pipeline_presentation_Page_04.jpg,./resources/img/pipeline/pipeline_presentation_Page_05.jpg,./resources/img/pipeline/pipeline_presentation_Page_06.jpg,./resources/img/pipeline/pipeline_presentation_Page_07.jpg,./resources/img/pipeline/pipeline_presentation_Page_08.jpg,./resources/img/pipeline/pipeline_presentation_Page_09.jpg,./resources/img/pipeline/pipeline_presentation_Page_10.jpg,./resources/img/pipeline/pipeline_presentation_Page_11.jpg,./resources/img/pipeline/pipeline_presentation_Page_12.jpg,./resources/img/pipeline/pipeline_presentation_Page_13.jpg,./resources/img/pipeline/pipeline_presentation_Page_14.jpg,./resources/img/pipeline/pipeline_presentation_Page_15.jpg,./resources/img/pipeline/pipeline_presentation_Page_16.jpg" class="magnific-gallery thesis-preview clickable">
-              <img src="./resources/img/thesis_cover.jpg" class="thumbnail"/>
-              </a>
-            </div>
-            <div class="col span-2-of-3 description-container">
-              <a class="title" href="./resources/img/pipeline_presentation.pdf" target="_blank">Pipelined Methylation Analysis and Mapping Reads for Display on IGV<i class="ion-android-open icon-small"></i></a>
-              <a class="github-button" href="https://github.com/aowen87/VincePipeline" data-size="large" aria-label="View on GitHub">View</a>
-              <p class="description">
-                As part of a class project for CIS 454 (Bioinformatics), myself and two others teamed up with a postdoctoral researcher to help pipeline the analysis of ChiPSeq data.  We used a combination of Python and bash scripts to automate the analysis and create a graphic user interface for biologists without knowledge of command line programs.  The project is now hosted on the University of Oregon super computer as well as GitHub.  This provided me with practical experience creating meaningful, easily accessible programs.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        <div id="oimb" class="tabcontent-project">
-          <div class="row">
-            <p class="long-copy">
-              I spent one quarter at the Oregon Institute of Marine Biology (OIMB).  As an independent class project, I created a portfolio representing a small portion of the vast diversity of invertebrates found along the West Coast. All photographs were taken by myself either in the field or a lab setting.  Editing was done using Adobe Photoshop and Illustrator.
-            </p>
-            <hr />
-          </div>
-          <div class="row oimb">
-            <div class="col span-1-of-3">
-              <figure class="thumbnail">
-                <a data-links="./resources/img/inverts_portfolio-01.jpg,./resources/img/inverts_portfolio-02.jpg,./resources/img/inverts_portfolio-03.jpg,./resources/img/inverts_portfolio-04.jpg,./resources/img/inverts_portfolio-05.jpg,./resources/img/inverts_portfolio-06.jpg" class="magnific-gallery portfolio-preview clickable">
-                <img src="./resources/img/inverts_portfolio-01.jpg" class="thumbnail"/>
-                </a>
-              </figure>
-              <figcaption class="fig-caption">
-                Sample portfolio pages.  6 of 75.
-              </figcaption>
-
-            </div>
-              <div class="col span-2-of-3">
-                <div class="popup-gallery-inverts">
-
-                    <a href="./resources/img/inverts/christmas_anemone.jpg" title="Christmas Anemone"><img src="./resources/img/inverts/christmas_anemone-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/gaper_clam.jpg" title="Gaper Clam"><img src="./resources/img/inverts/gaper_clam-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/glass_sponge.jpg" title="Glass Sponge"><img src="./resources/img/inverts/glass_sponge-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/heart_cockle.jpg" title="Heart Cockle"><img src="./resources/img/inverts/heart_cockle-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/lined_chiton.jpg" title="Lined Chiton"><img src="./resources/img/inverts/lined_chiton-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/nauplius.jpg" title="Nauplius"><img src="./resources/img/inverts/nauplius-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/opalescent_nudibranch.jpg" title="Opalescent Nudibranch"><img src="./resources/img/inverts/opalescent_nudibranch-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/orange_cup_coral.jpg" title="Orange Cup Coral"><img src="./resources/img/inverts/orange_cup_coral-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/red_abalone.jpg" title="Red Abalone"><img src="./resources/img/inverts/red_abalone-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/skeleton_shrimp.jpg" title="Skeleton Shrimp"><img src="./resources/img/inverts/skeleton_shrimp-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/strawberry_anenome.jpg" title="Strawberry Anemone"><img src="./resources/img/inverts/strawberry_anenome-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/volcano_limpet_1.jpg" title="Volcano Limpet"><img src="./resources/img/inverts/volcano_limpet_1-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/volcano_limpet_2.jpg" title="Volcano Limpet"><img src="./resources/img/inverts/volcano_limpet_2-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/volcano_limpet_3.jpg" title="Volcano Limpet"><img src="./resources/img/inverts/volcano_limpet_3-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/brittle_star.jpg" title="Brittle Star"><img src="./resources/img/inverts/brittle_star-sm.jpg"></a>
-
-                    <a href="./resources/img/inverts/hudsons_dorid.jpg" title="Hudsin's Dorid"><img src="./resources/img/inverts/hudsons_dorid-sm.jpg"></a>
-                </div>
-              </div>
-            </div>
-        </div>
-
-      </div>
-    </section>
 
 
 
