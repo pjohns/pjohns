@@ -181,8 +181,6 @@ a:active {
    background-color: transparent;
    text-align: center;
    margin-bottom: 20px;
-   display: flex;
-   align-items: flex-end;
 }
 
 /* Style the buttons that are used to open the tab content */
