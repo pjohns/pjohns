@@ -94,13 +94,13 @@
       <div class="row">
       <!-- Tab links -->
         <div class="tab">
-         <button class="tablinks span-1-of-3" onclick="openExperience(event, 'Education')" id="defaultOpen_1"><h3>Education</h3></button>
-         <button class="tablinks span-1-of-3" onclick="openExperience(event, 'Jobs')"><h3>Jobs</h3></button>
-         <button class="tablinks span-1-of-3" onclick="openExperience(event, 'Skills')"><h3>Skills</h3></button>
+         <button class="tablinks-experience span-1-of-3 default_tab" onclick="openTab(event, 'Education', 'experience-tab', 'tablinks-experience')"><h3>Education</h3></button>
+         <button class="tablinks-experience span-1-of-3" onclick="openTab(event, 'Jobs', 'experience-tab', 'tablinks-experience')"><h3>Jobs</h3></button>
+         <button class="tablinks-experience span-1-of-3" onclick="openTab(event, 'Skills', 'experience-tab', 'tablinks-experience')"><h3>Skills</h3></button>
         </div>
 
         <!-- Tab content -->
-        <div id="Education" class="tabcontent">
+        <div id="Education" class="tabcontent experience-tab">
           <div class="row education">
             <div class="col span-1-of-3">
               <h4>University of Oregon</h4>
@@ -146,7 +146,7 @@
           </div>
         </div>
 
-        <div id="Jobs" class="tabcontent">
+        <div id="Jobs" class="tabcontent experience-tab">
           <div class="row education">
             <div class="col span-1-of-3">
               <h4>Doe Laboratory, Howard Hughes Medical Institute</h4>
@@ -193,7 +193,7 @@
             </div>
           </div>
         </div>
-        <div id="Skills" class="tabcontent">
+        <div id="Skills" class="tabcontent experience-tab">
           <div class="row">
               <div class="col span-1-of-3">
                   <div class="skills-box">
@@ -251,14 +251,15 @@
       <div class="row">
       <!-- Tab links -->
         <div class="tab">
-          <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'shadowfox')" id="defaultOpen_2"><h3>ShadowFox</h3></button>
-         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'osc')"><h3>Open Source Contributions</h3></button>
-         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'pipeline')"><h3>ChiPSeq Pipeline</h3></button>
-         <button class="tablinks-project span-1-of-4" onclick="openProject(event, 'oimb')"><h3>OIMB</h3></button>
+          <button class="tablinks-project span-1-of-5 default_tab" onclick="openTab(event, 'shadowfox', 'project-tab', 'tablinks-project')"><h3>ShadowFox</h3></button>
+          <button class="tablinks-project span-1-of-5" onclick="openTab(event, 'osc', 'project-tab', 'tablinks-project')"><h3>Open Source Contributions</h3></button>
+          <button class="tablinks-project span-1-of-5" onclick="openTab(event, 'pipeline', 'project-tab', 'tablinks-project')"><h3>ChiPSeq Pipeline</h3></button>
+          <button class="tablinks-project span-1-of-5" onclick="openTab(event, 'oimb', 'project-tab', 'tablinks-project')"><h3>OIMB</h3></button>
+          <button class="tablinks-project span-1-of-5" onclick="openTab(event, 'ebird', 'project-tab', 'tablinks-project')"><h3>eBird Data Analysis</h3></button>
         </div>
 
         <!-- Tab content -->
-        <div id="shadowfox" class="tabcontent-project">
+        <div id="shadowfox" class="tabcontent project-tab">
           <div class="row">
             <div class="col span-1-of-3">
               <a href="https://overdodactyl.github.io/ShadowFox/" target="_blank">
@@ -276,7 +277,7 @@
           </div>
         </div>
 
-        <div id="osc" class="row tabcontent-project">
+        <div id="osc" class="row tabcontent project-tab">
           <div class="row">
             <div class="col span-1-of-8 os-thumb">
               <img class="thumbnail" src="./resources/img/ghacks-logo.png" />
@@ -313,7 +314,7 @@
           </div>
         </div>
 
-        <div id="pipeline" class="tabcontent-project">
+        <div id="pipeline" class="tabcontent project-tab">
           <div class="row">
             <div class="col span-1-of-3">
               <a data-links="./resources/img/pipeline/pipeline_presentation_Page_01.jpg,./resources/img/pipeline/pipeline_presentation_Page_02.jpg,./resources/img/pipeline/pipeline_presentation_Page_03.jpg,./resources/img/pipeline/pipeline_presentation_Page_04.jpg,./resources/img/pipeline/pipeline_presentation_Page_05.jpg,./resources/img/pipeline/pipeline_presentation_Page_06.jpg,./resources/img/pipeline/pipeline_presentation_Page_07.jpg,./resources/img/pipeline/pipeline_presentation_Page_08.jpg,./resources/img/pipeline/pipeline_presentation_Page_09.jpg,./resources/img/pipeline/pipeline_presentation_Page_10.jpg,./resources/img/pipeline/pipeline_presentation_Page_11.jpg,./resources/img/pipeline/pipeline_presentation_Page_12.jpg,./resources/img/pipeline/pipeline_presentation_Page_13.jpg,./resources/img/pipeline/pipeline_presentation_Page_14.jpg,./resources/img/pipeline/pipeline_presentation_Page_15.jpg,./resources/img/pipeline/pipeline_presentation_Page_16.jpg" class="magnific-gallery thesis-preview clickable">
@@ -321,7 +322,7 @@
               </a>
             </div>
             <div class="col span-2-of-3 description-container">
-              <a class="title" href="./resources/img/pipeline_presentation.pdf" target="_blank">Pipelined Methylation Analysis and Mapping Reads for Display on IGV<i class="ion-android-open icon-small"></i></a>
+              <a class="title" href="./resources/img/pipeline_presentation.pdf" target="_blank">Pipelined Methylation Analysis and Mapping Reads for Display on IGV<i class="ion-link icon-small"></i></a>
               <a class="github-button" href="https://github.com/aowen87/VincePipeline" data-size="large" aria-label="View on GitHub">View</a>
               <p class="description">
                 As part of a class project for CIS 454 (Bioinformatics), myself and two others teamed up with a postdoctoral researcher to help pipeline the analysis of ChiPSeq data.  We used a combination of Python and Bash scripts to automate the analysis and create a graphic user interface for biologists without knowledge of command line programs.  The project is now hosted on the University of Oregon super computer as well as GitHub.  This provided me with practical experience creating meaningful, easily accessible programs.
@@ -331,7 +332,7 @@
         </div>
 
 
-        <div id="oimb" class="tabcontent-project">
+        <div id="oimb" class="tabcontent project-tab">
           <div class="row">
             <p class="long-copy">
               I spent one quarter at the Oregon Institute of Marine Biology (OIMB).  As an independent class project, I created a portfolio representing a small portion of the vast diversity of invertebrates found along the West Coast. All photographs were taken by myself either in the field or a lab setting.  Editing was done using Adobe Photoshop and Illustrator.
@@ -387,6 +388,23 @@
                 </div>
               </div>
             </div>
+        </div>
+        <div id="ebird" class="tabcontent project-tab">
+
+          <div class="row">
+            <div class="col span-1-of-3">
+              <a data-links="./resources/img/ebird/sample_report_Page_1.jpg,./resources/img/ebird/sample_report_Page_2.jpg,./resources/img/ebird/sample_report_Page_3.jpg,./resources/img/ebird/sample_report_Page_4.jpg" class="magnific-gallery portfolio-preview clickable">
+                <img src="./resources/img/ebird/ebird_report_thumbnail.jpg" class="thumbnail"/>
+              </a>
+            </div>
+            <div class="col span-2-of-3 description-container">
+              <a class="title" href="./resources/img/ebird/sample_report.pdf" target="_blank">Table Generation for eBird Data<i class="ion-link icon-small"></i></a>
+              <a class="github-button" href="https://github.com/pjohns/eBird-reporting" data-size="large" aria-label="View on GitHub">View</a>
+              <p class="description">
+                Built in R, this personal project is meant to help analyze eBird data and generate tables used to visualize sighting information based on time, location, or species.
+              </p>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -461,48 +479,25 @@
 
     </section>
 
-
-
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="vendors/js/jquery.magnific-popup.min.js"></script>
     <script src="resources/js/script.js"></script>
     <script>
-      document.getElementById("defaultOpen_1").click();
-      function openExperience(evt, cityName) {
+      var elems = document.getElementsByClassName("default_tab");
+      for (var i=0, len=elems.length; i < len; i++) elems[i].click();
+      function openTab(evt, tabName, tabcontent, tablinks) {
           var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
+          tabcontent = document.getElementsByClassName(tabcontent);
           for (i = 0; i < tabcontent.length; i++) {
               tabcontent[i].style.display = "none";
           }
-          tablinks = document.getElementsByClassName("tablinks");
+          tablinks = document.getElementsByClassName(tablinks);
           for (i = 0; i < tablinks.length; i++) {
               tablinks[i].className = tablinks[i].className.replace(" active", "");
           }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
-      }
-    </script>
-    <script>
-      document.getElementById("defaultOpen_2").click();
-      function openProject(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent-project");
-          for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks-project");
-          for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
+          document.getElementById(tabName).style.display = "block";
           evt.currentTarget.className += " active";
       }
     </script>

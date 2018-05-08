@@ -181,6 +181,8 @@ a:active {
    background-color: transparent;
    text-align: center;
    margin-bottom: 20px;
+   display: flex;
+   align-items: flex-end;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -443,7 +445,11 @@ span.location  {
 /* ----------------------------------------------- */
 
 #projects h3 {
-  font-size: 130%;
+  font-size: 110%;
+}
+
+#projects a {
+  border: 0 !important;
 }
 
 /* ShadowFox */
