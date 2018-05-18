@@ -157,6 +157,11 @@ a:active {
     border-bottom: 1px solid var(--main-accent-1);
 }
 
+.popup-gallery a,
+a.magnific-gallery{
+  border: 0;
+}
+
 .clickable:hover {
   cursor: pointer;
 }

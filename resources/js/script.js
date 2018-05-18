@@ -1,6 +1,8 @@
+
+
 $(document).ready(function() {
 
-    /* For the sticky navigation */
+    // For the sticky navigation
     $('.js--section-profile').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
@@ -11,30 +13,22 @@ $(document).ready(function() {
       offset: '60px;'
     });
 
-    $('.js--arrow-icon-1').click(function() {
-        var icon = $('.js--arrow-icon-1 i');
 
-        if (icon.hasClass('ion-ios-arrow-right')) {
-            icon.addClass('ion-ios-arrow-down');
-            icon.removeClass('ion-ios-arrow-right');
-        } else {
-            icon.addClass('ion-ios-arrow-right');
-            icon.removeClass('ion-ios-arrow-down');
-        }
-    });
+    // For Arrows
+    function switchArrow(className) {
+      var icon = $(className + ' i');
 
+      if (icon.hasClass('ion-ios-arrow-right')) {
+          icon.addClass('ion-ios-arrow-down');
+          icon.removeClass('ion-ios-arrow-right');
+      } else {
+          icon.addClass('ion-ios-arrow-right');
+          icon.removeClass('ion-ios-arrow-down');
+      }
+    }
 
-    $('.js--arrow-icon-2').click(function() {
-        var icon = $('.js--arrow-icon-2 i');
-
-        if (icon.hasClass('ion-ios-arrow-right')) {
-            icon.addClass('ion-ios-arrow-down');
-            icon.removeClass('ion-ios-arrow-right');
-        } else {
-            icon.addClass('ion-ios-arrow-right');
-            icon.removeClass('ion-ios-arrow-down');
-        }
-    });
+    document.querySelector('.js--arrow-icon-1').addEventListener('click', switchArrow.bind(this, '.js--arrow-icon-1'));
+    document.querySelector('.js--arrow-icon-2').addEventListener('click', switchArrow.bind(this, '.js--arrow-icon-2'));
 
     $('.js--wp-2').waypoint(function(direction) {
         $('.js--wp-2').addClass('animated fadeInUp');
@@ -93,6 +87,8 @@ $(document).ready(function() {
         type: 'iframe'
     });
 
+
+
     $('.popup-gallery').magnificPopup({
        delegate: 'a',
        type: 'image',
@@ -110,6 +106,11 @@ $(document).ready(function() {
            }
        }
    });
+
+
+
+
+
     $('.popup-gallery-inverts').magnificPopup({
        delegate: 'a',
        type: 'image',
@@ -144,6 +145,8 @@ $(document).ready(function() {
           }
       }
   });
+
+
 
    $('.magnific-gallery').each(function(index , value){
     var gallery = $(this);
