@@ -131,6 +131,11 @@ p {
     margin-top: -5px;
 }
 
+.ion-ios-arrow-right,
+.ion-ios-arrow-down {
+  margin-left: 2px;
+}
+
 li {
   list-style: none;
 }
