@@ -34,16 +34,6 @@ $(document).ready(function() {
     offset: '90%'
   });
 
-  $('.js--wp-4').waypoint(function(direction) {
-    $('.js--wp-4').addClass('animated pulse');
-  }, {
-    offset: '50%'
-  });
-
-
-
-
-
   /* Navigation scroll */
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
