@@ -94,9 +94,7 @@
        font-size: 100%;
     }
 
-
     .sticky .main-nav { margin-top: 0; }
-
 
     .sticky .main-nav li a:link,
     .sticky .main-nav li a:visited {
@@ -104,17 +102,20 @@
        color: #fff;
     }
 
-
-
     .sticky .mobile-nav-icon { margin-top: 10px; }
     .sticky .mobile-nav-icon i { color: #555; }
     .sticky .mobile-nav-icon i.ion-close-round { color: #fff; }
 
-
-
-    h1 { font-size: 180%; }
+    h1 {
+        font-size: 180%;
+        margin-bottom: 10px;
+    }
     h2 { font-size: 150%; }
-    h3 { font-size: 120% !important;
+    h3 { font-size: 120% !important;}
+
+    h1:after {
+        margin-top: 10px;
+        width: 150px;
     }
 
     .long-copy {
