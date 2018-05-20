@@ -59,6 +59,34 @@
         margin: 0 0 4% 0;
     }
 
+    .profile-photo {width: 65% !important;}
+
+    #profile > div:nth-child(2) > div:nth-child(2),
+    #profile > div:nth-child(2) > div:nth-child(3){
+        width: 50%;
+    }
+
+    .description-container {padding: 0 0px;}
+    #experience .span-1-of-3 {margin-bottom: 0px;}
+    #Education .span-2-of-3 .icon-small {margin-left: 0px;}
+    #Jobs .ion-link {margin-left: 2px}
+    .skills-box { margin-bottom: 10px}
+
+    button { margin-bottom: 0 !important;}
+
+    #shadowfox .thumbnail,
+    #pipeline .thumbnail,
+    #ebird .thumbnail {
+        width: 55% !important;
+    }
+
+    #osc .span-7-of-8 {
+        width: 75%;
+        margin-left: 10px
+    }
+
+    #publications .thumbnail{text-align: left;}
+
 
     .main-nav { display: none; }
     .mobile-nav-icon {
@@ -127,7 +155,7 @@
 
 
     .section-presentations .span-1-of-3 {
-      text-align: center;
+      text-align: left;
     }
 
     .section-presentations .span-1-of-3 img {
@@ -147,5 +175,7 @@
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     section { padding: 25px 0; }
-    .contact-form {width: 100%; }
+    #profile > div:nth-child(2) > div:nth-child(2) { width: 35%}
+
+
 }
