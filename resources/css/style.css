@@ -339,6 +339,10 @@ header h3 {
   display: block;
 }
 
+a.mobile-nav-icon {
+  border: none;
+}
+
 html body.mfp-zoom-out-cur header nav.sticky {
   display: none;
 }
