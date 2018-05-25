@@ -3,4 +3,4 @@ require('waypoints/lib/jquery.waypoints');
 require('lazysizes');
 require('magnific-popup');
 require('html5shiv');
-require('./resources/js/script')
+require('./resources/js/script');
