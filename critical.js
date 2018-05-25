@@ -6,6 +6,5 @@ critical.generate({
   src: 'index.html',
   dest: 'index.html',
   ignore: ['@font-face'],
-  minify: true,
-  extract: true
+  minify: true
 });
