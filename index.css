@@ -1,7 +1,7 @@
 @import "./vendors/css/animate.css";
 @import "./vendors/css/grid.css";
 @import "./vendors/css/ionicons.css";
-@import "./vendors/css/magnific-popup.css";
+@import "./node_modules/magnific-popup/dist/magnific-popup.css";
 @import "./vendors/css/normalize.css";
 @import "./vendors/css/open-sans.css";
 @import "./resources/css/style";
