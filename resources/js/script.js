@@ -11,7 +11,6 @@ $(document).ready(function() {
     offset: '60px;'
   });
 
-
   // For Arrows
   function switchArrow(className) {
     var icon = $(className + ' i');
@@ -201,6 +200,5 @@ $(document).ready(function() {
       }
     });
   }
-
 
 });
