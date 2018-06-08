@@ -244,10 +244,12 @@
       <!-- Tab links -->
       <div class="tab">
         <button class="tablinks-project col span-1-of-5 default_tab" onclick="openTab(event, 'shadowfox', 'project-tab', 'tablinks-project')"><h3>ShadowFox</h3></button>
+        <button class="tablinks-project col span-1-of-5" onclick="openTab(event, 'flowline-finder', 'project-tab', 'tablinks-project')"><h3>Flowline Finder</h3></button>
         <button class="tablinks-project col span-1-of-5" onclick="openTab(event, 'osc', 'project-tab', 'tablinks-project')"><h3>Open Source Contribution</h3></button>
         <button class="tablinks-project col span-1-of-5" onclick="openTab(event, 'pipeline', 'project-tab', 'tablinks-project')"><h3>ChiPSeq Pipeline</h3></button>
         <button class="tablinks-project col span-1-of-5" onclick="openTab(event, 'oimb', 'project-tab', 'tablinks-project')"><h3>OIMB</h3></button>
-        <button class="tablinks-project col span-1-of-5" onclick="openTab(event, 'ebird', 'project-tab', 'tablinks-project')"><h3>eBird Data Analysis</h3></button>
+        <!--          <button class="tablinks-project col span-1-of-5" onclick="openTab(event, 'ebird', 'project-tab', 'tablinks-project')"><h3>eBird Data Analysis</h3></button>         -->
+
       </div>
 
       <!-- Tab content -->
@@ -267,6 +269,23 @@
             </p>
           </div>
         </div>
+      </div>
+      <div id="flowline-finder" class="tabcontent project-tab">
+        <div class="row">
+          <p class="long-copy">
+            I am collaborating with a PhD student at UC Santa Barbara to design <a href="https://github.com/mikejohnson51/FlowlineFinder">Flowline Finder</a>, an ongoing project with the intention of helping users find, view and download National Hydrograph Dataset (NHD) and National Water Model Data.  Of particular interest is the ability to find nearby NHD reaches in the field.<br /><br />
+            My work has primarily focused on implementing the graphical user interface, which is driven by R Shiny.
+          </p>
+          <hr />
+        </div>
+        <div class="row">
+          <video controls>
+            <source src="./resources/img/lazyload/flowline_finder_comp.mp4" type="video/mp4">.
+          </video>
+        </div>
+
+
+
       </div>
       <div id="osc" class="row tabcontent project-tab">
         <div class="row">

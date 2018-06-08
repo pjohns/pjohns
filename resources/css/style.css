@@ -481,6 +481,12 @@ span.location {
   border: 0;
 }
 
+/* Flowline Finder */
+#flowline-finder video {
+  width: 100%;
+  height: auto;
+}
+
 /* Open Source Contributions */
 
 .os-thumb {
