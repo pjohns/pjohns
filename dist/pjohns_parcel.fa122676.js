@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({77:[function(require,module,exports) {
+})({119:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -128,7 +128,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],55:[function(require,module,exports) {
+},{}],96:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -159,61 +159,61 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":77}],46:[function(require,module,exports) {
+},{"./bundle-url":119}],83:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":55}],47:[function(require,module,exports) {
+},{"_css_loader":96}],84:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":55}],48:[function(require,module,exports) {
+},{"_css_loader":96}],85:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../fonts/ionicons.eot":57,"./../fonts/ionicons.woff":58,"./../fonts/ionicons.ttf":59,"./../fonts/ionicons.svg":60,"_css_loader":55}],56:[function(require,module,exports) {
+},{"./../fonts/ionicons.eot":98,"./../fonts/ionicons.woff":99,"./../fonts/ionicons.ttf":100,"./../fonts/ionicons.svg":101,"_css_loader":96}],91:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":55}],49:[function(require,module,exports) {
+},{"_css_loader":96}],86:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":55}],50:[function(require,module,exports) {
+},{"_css_loader":96}],87:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../fonts/open-sans/Regular/OpenSans-Regular.eot":61,"./../fonts/open-sans/Regular/OpenSans-Regular.woff2":62,"./../fonts/open-sans/Regular/OpenSans-Regular.woff":63,"./../fonts/open-sans/Regular/OpenSans-Regular.ttf":64,"./../fonts/open-sans/Regular/OpenSans-Regular.svg":65,"./../fonts/open-sans/Italic/OpenSans-Italic.eot":66,"./../fonts/open-sans/Italic/OpenSans-Italic.woff2":67,"./../fonts/open-sans/Italic/OpenSans-Italic.woff":68,"./../fonts/open-sans/Italic/OpenSans-Italic.ttf":69,"./../fonts/open-sans/Italic/OpenSans-Italic.svg":70,"./../fonts/open-sans/Semibold/OpenSans-Semibold.eot":71,"./../fonts/open-sans/Semibold/OpenSans-Semibold.woff2":72,"./../fonts/open-sans/Semibold/OpenSans-Semibold.woff":73,"./../fonts/open-sans/Semibold/OpenSans-Semibold.ttf":74,"./../fonts/open-sans/Semibold/OpenSans-Semibold.svg":75,"_css_loader":55}],53:[function(require,module,exports) {
+},{"./../fonts/open-sans/Regular/OpenSans-Regular.eot":103,"./../fonts/open-sans/Regular/OpenSans-Regular.woff2":104,"./../fonts/open-sans/Regular/OpenSans-Regular.woff":105,"./../fonts/open-sans/Regular/OpenSans-Regular.ttf":106,"./../fonts/open-sans/Regular/OpenSans-Regular.svg":114,"./../fonts/open-sans/Italic/OpenSans-Italic.eot":109,"./../fonts/open-sans/Italic/OpenSans-Italic.woff2":107,"./../fonts/open-sans/Italic/OpenSans-Italic.woff":112,"./../fonts/open-sans/Italic/OpenSans-Italic.ttf":108,"./../fonts/open-sans/Italic/OpenSans-Italic.svg":110,"./../fonts/open-sans/Semibold/OpenSans-Semibold.eot":111,"./../fonts/open-sans/Semibold/OpenSans-Semibold.woff2":113,"./../fonts/open-sans/Semibold/OpenSans-Semibold.woff":115,"./../fonts/open-sans/Semibold/OpenSans-Semibold.ttf":116,"./../fonts/open-sans/Semibold/OpenSans-Semibold.svg":117,"_css_loader":96}],88:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./img/mCherry-min.jpg":76,"_css_loader":55}],54:[function(require,module,exports) {
+},{"./img/mCherry-min.jpg":102,"_css_loader":96}],89:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":55}],2:[function(require,module,exports) {
+},{"_css_loader":96}],42:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./vendors/css/animate.css":46,"./vendors/css/grid.css":47,"./vendors/css/ionicons.css":48,"./node_modules/magnific-popup/dist/magnific-popup.css":56,"./vendors/css/normalize.css":49,"./vendors/css/open-sans.css":50,"./resources/css/style":53,"./resources/css/queries":54,"_css_loader":55}],89:[function(require,module,exports) {
+},{"./vendors/css/animate.css":83,"./vendors/css/grid.css":84,"./vendors/css/ionicons.css":85,"./node_modules/magnific-popup/dist/magnific-popup.css":91,"./vendors/css/normalize.css":86,"./vendors/css/open-sans.css":87,"./resources/css/style":88,"./resources/css/queries":89,"_css_loader":96}],163:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -242,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64222' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50003' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -383,7 +383,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],90:[function(require,module,exports) {
+},{}],164:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -464,6 +464,6 @@ LazyPromise.prototype.catch = function (onError) {
   if (this.promise === null) this.promise = new Promise(this.executor);
   return this.promise.catch(onError);
 };
-},{"./bundle-url":77}],0:[function(require,module,exports) {
-var b=require(90);b.load([["ionicons.db5d68a8.eot",57],["ionicons.61d2339d.woff",58],["ionicons.3cb27d6d.ttf",59],["ionicons.4c8ea61c.svg",60],["OpenSans-Regular.9a9d0cea.eot",61],["OpenSans-Regular.86f7f7c8.woff2",62],["OpenSans-Regular.1361b4fe.woff",63],["OpenSans-Regular.111305f8.ttf",64],["OpenSans-Regular.062b4b1f.svg",65],["OpenSans-Italic.a0d0ad51.eot",66],["OpenSans-Italic.fb204e40.woff2",67],["OpenSans-Italic.5aaf3d7c.woff",68],["OpenSans-Italic.5d756667.ttf",69],["OpenSans-Italic.3920341c.svg",70],["OpenSans-Semibold.cc2f27fc.eot",71],["OpenSans-Semibold.98f7cb19.woff2",72],["OpenSans-Semibold.f22de41d.woff",73],["OpenSans-Semibold.3423d663.ttf",74],["OpenSans-Semibold.92f86c3f.svg",75],["mCherry-min.93880862.jpg",76]]);
-},{}]},{},[89,0], null)
+},{"./bundle-url":119}],0:[function(require,module,exports) {
+var b=require(164);b.load([["ionicons.db5d68a8.eot",98],["ionicons.61d2339d.woff",99],["ionicons.3cb27d6d.ttf",100],["ionicons.4c8ea61c.svg",101],["OpenSans-Regular.9a9d0cea.eot",103],["OpenSans-Regular.86f7f7c8.woff2",104],["OpenSans-Regular.1361b4fe.woff",105],["OpenSans-Regular.111305f8.ttf",106],["OpenSans-Regular.062b4b1f.svg",114],["OpenSans-Italic.a0d0ad51.eot",109],["OpenSans-Italic.fb204e40.woff2",107],["OpenSans-Italic.5aaf3d7c.woff",112],["OpenSans-Italic.5d756667.ttf",108],["OpenSans-Italic.3920341c.svg",110],["OpenSans-Semibold.cc2f27fc.eot",111],["OpenSans-Semibold.98f7cb19.woff2",113],["OpenSans-Semibold.f22de41d.woff",115],["OpenSans-Semibold.3423d663.ttf",116],["OpenSans-Semibold.92f86c3f.svg",117],["mCherry-min.93880862.jpg",102]]);
+},{}]},{},[163,0], null)

@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({85:[function(require,module,exports) {
+})({118:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -285,7 +285,7 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-},{}],81:[function(require,module,exports) {
+},{}],93:[function(require,module,exports) {
 var global = arguments[3];
 var process = require("process");
 var define;
@@ -10654,7 +10654,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":85}],84:[function(require,module,exports) {
+},{"process":118}],97:[function(require,module,exports) {
 /*!
 Waypoints - 4.0.1
 Copyright © 2011-2016 Caleb Troughton
@@ -11317,7 +11317,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   }
 }())
 ;
-},{}],83:[function(require,module,exports) {
+},{}],95:[function(require,module,exports) {
 (function(window, factory) {
 	var lazySizes = factory(window, window.document);
 	window.lazySizes = lazySizes;
@@ -12017,7 +12017,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 }
 ));
 
-},{}],78:[function(require,module,exports) {
+},{}],92:[function(require,module,exports) {
 var define;
 /*! Magnific Popup - v1.1.0 - 2016-02-20
 * http://dimsemenov.com/plugins/magnific-popup/
@@ -13811,7 +13811,7 @@ var define;
 	/*>>retina*/
 	_checkInstance();
 });
-},{"jquery":81}],82:[function(require,module,exports) {
+},{"jquery":93}],94:[function(require,module,exports) {
 /**
 * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
 */
@@ -14139,7 +14139,7 @@ var define;
 
 }(typeof window !== "undefined" ? window : this, document));
 
-},{}],80:[function(require,module,exports) {
+},{}],90:[function(require,module,exports) {
 $(document).ready(function () {
 
   // For the sticky navigation
@@ -14331,14 +14331,14 @@ $(document).ready(function () {
     });
   }
 });
-},{}],4:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 window.jQuery = window.$ = require("jquery");
 require('waypoints/lib/jquery.waypoints');
 require('lazysizes');
 require('magnific-popup');
 require('html5shiv');
 require('./resources/js/script');
-},{"jquery":81,"waypoints/lib/jquery.waypoints":84,"lazysizes":83,"magnific-popup":78,"html5shiv":82,"./resources/js/script":80}],91:[function(require,module,exports) {
+},{"jquery":93,"waypoints/lib/jquery.waypoints":97,"lazysizes":95,"magnific-popup":92,"html5shiv":94,"./resources/js/script":90}],120:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -14367,7 +14367,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '64222' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50003' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -14508,5 +14508,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[91,4], null)
+},{}]},{},[120,44], null)
 //# sourceMappingURL=/pjohns_parcel.6d48cbce.map
